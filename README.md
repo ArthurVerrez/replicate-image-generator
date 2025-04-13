@@ -2,7 +2,7 @@
 
 A simple image generation web application using Next.js, Shadcn UI, Replicate, and Firebase. Generate images based on prompts using a specified Replicate model and view previously generated images.
 
-Inspired by [vercel-labs/ai-sdk-image-generator](https://github.com/vercel-labs/ai-sdk-image-generator).
+Forked from [vercel-labs/ai-sdk-image-generator](https://github.com/vercel-labs/ai-sdk-image-generator).
 
 ## Features
 
@@ -70,8 +70,14 @@ Copy `.env.example` to `.env` and provide the following values:
   - `REPLICATE_API_TOKEN`: Your API token from Replicate.
   - `NEXT_PUBLIC_REPLICATE_MODEL_ID`: The Replicate model identifier (e.g., `owner/model-name:version`).
 - **Firebase Admin SDK Configuration (Server-side):**
+
   - `FIREBASE_SERVICE_ACCOUNT_JSON`: Your Firebase service account key JSON, encoded in **Base64**.
+  - **How to generate Base64:** Download your service account key file, then run this Node.js command in your terminal (replace `path/to/your-key.json`):
+    ```bash
+    node -e "console.log(require('fs').readFileSync('path/to/your-key.json').toString('base64'))"
+    ```
   - `FIREBASE_ADMIN_STORAGE_BUCKET`: Your Firebase Storage bucket name (e.g., `your-project-id.appspot.com`).
+
 - **Firebase Client SDK Configuration (Client-side):**
   - `NEXT_PUBLIC_FIREBASE_API_KEY`: Your Firebase project's Web API Key.
   - `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`: Your Firebase project's Auth Domain.
@@ -113,4 +119,4 @@ This application is ready to be deployed on platforms like Vercel.
 
 ## Acknowledgments
 
-- Started from [vercel-labs/ai-sdk-image-generator](https://github.com/vercel-labs/ai-sdk-image-generator)
+- Forked from [vercel-labs/ai-sdk-image-generator](https://github.com/vercel-labs/ai-sdk-image-generator)
