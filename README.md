@@ -1,5 +1,7 @@
 # Replicate Image Generator
 
+![Application Screenshot](./app-image.png)
+
 A simple image generation web application using Next.js, Shadcn UI, Replicate, and Firebase. Generate images based on prompts using a specified Replicate model and view previously generated images.
 
 Forked from [vercel-labs/ai-sdk-image-generator](https://github.com/vercel-labs/ai-sdk-image-generator).
