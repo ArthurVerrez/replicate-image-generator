@@ -4,6 +4,8 @@ A simple image generation web application using Next.js, Shadcn UI, Replicate, a
 
 Forked from [vercel-labs/ai-sdk-image-generator](https://github.com/vercel-labs/ai-sdk-image-generator).
 
+**Recommended Use Case:** This project works particularly well with a `FLUX.1-dev` model fine-tuned on a specific subject using the [ostris/flux-dev-lora-trainer](https://replicate.com/ostris/flux-dev-lora-trainer/train) on Replicate. You can then use the resulting model ID in the configuration.
+
 ## Features
 
 - Generate images using a configured Replicate model.
