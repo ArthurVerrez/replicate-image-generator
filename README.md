@@ -124,3 +124,5 @@ This application is ready to be deployed on platforms like Vercel.
 ## Acknowledgments
 
 - Forked from [vercel-labs/ai-sdk-image-generator](https://github.com/vercel-labs/ai-sdk-image-generator)
+
+* [ostris/flux-dev-lora-trainer](https://replicate.com/ostris/flux-dev-lora-trainer/train) for fine-tuning the tested model.
